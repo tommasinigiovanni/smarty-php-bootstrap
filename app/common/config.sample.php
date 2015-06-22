@@ -7,9 +7,9 @@ return array(
   'db' => array(
     'driver'    => 'mysql',
     'host'      => 'localhost',
-    'user'      => 'user',
+    'user'      => 'bootstrap',
     'password'  => 'password',
-    'port'      => '3206',
-    'dbname'    => 'testapp'
+    'port'      => '3306',
+    'dbname'    => 'bootstrap'
     )
   );
