@@ -17,7 +17,7 @@ define('TEMPLATES_C', APP . '/templates_c');
 // get route path into constant
 $URI = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
 if($URI === '/')
-	$URI = '/home/home';
+	$URI = '/home';
 
 session_start();
 

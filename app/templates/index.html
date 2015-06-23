@@ -34,6 +34,11 @@
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                {if Auth::is_logged()}
+                    <ul class="nav navbar-nav">
+                        <li class=""><a href="/routers">Routers</a></li>
+                    </ul>
+                {/if}
                 <ul class="nav navbar-nav navbar-right">
                     {if !Auth::is_logged()}
                         <li {if $URI == '/auth/login'}class='active'{/if}><a href="/auth/login">Login</a></li>

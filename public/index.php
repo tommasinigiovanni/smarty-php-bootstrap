@@ -12,6 +12,11 @@ if(Auth::is_logged() || Auth::is_public_route($URI))
 {
     if(is_file(INCLUDES . $URI . '.php')) {
         include INCLUDES . $URI . '.php';
+    } elseif(is_dir(INCLUDES . $URI)) {
+    	$URI = "$URI/index";
+	    if(is_file(INCLUDES . $URI . '.php')) {
+  	        include INCLUDES . $URI . '.php';
+	    }
     }
 }
 else
