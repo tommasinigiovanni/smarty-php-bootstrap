@@ -1,3 +1,6 @@
+-- MODIFY this file for your needs
+--
+
 CREATE DATABASE `bootstrap` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 
 USE `bootstrap`;

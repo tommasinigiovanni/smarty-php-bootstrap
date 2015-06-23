@@ -15,7 +15,9 @@ define('TEMPLATES', APP . '/templates');
 define('TEMPLATES_C', APP . '/templates_c');
 
 // get route path into constant
-define('URI', isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI']: '');
+$URI = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
+if($URI === '/')
+	$URI = '/home/home';
 
 session_start();
 
@@ -25,6 +27,7 @@ $smarty->setTemplateDir(TEMPLATES);
 $smarty->setCompileDir(TEMPLATES_C);
 
 $smarty->assign('content_file', 'not_found.html');;
+$smarty->assign('URI', $URI);
 
 spl_autoload_register(function($class){
     require_once CLASSI . "/{$class}.php";
