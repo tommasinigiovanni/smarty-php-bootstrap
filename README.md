@@ -1,3 +1,12 @@
+# Apache + MySQL + PHP + Smarty template
+The bootstrap example app
+
+## Tl;Dr; Starting up fast!
+
+```
+vagrant up
+```
+
 ## Installation
 
 Apache configuration for ver. > `2.4`, you need to have a `root` privileges to execute following commands o prefix them with `sudo` command.
