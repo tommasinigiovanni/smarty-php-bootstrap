@@ -60,6 +60,12 @@ Enable rewrite mode
 a2enmod rewrite
 ```
 
+Enable site
+
+```
+a2ensite smarty-php-bootstrap
+```
+
 Init database form the following `SQL`, you'd like to modify default database name/username/password and default web user data
 
 ```
@@ -106,3 +112,4 @@ INSERT INTO `users` (
 `/public` is the public folder available throught web-server that contains all static assets and unique entry point of the App - `index.php`
 
 
+now connect to www.example.com
